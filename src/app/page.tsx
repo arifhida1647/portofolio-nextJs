@@ -58,7 +58,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 flex justify-center">
               <Image
                 isBlurred
-                width={500}
+                width={300}
                 height={600}
                 src="https://portofolio-arifhidayat.vercel.app/images/profile.jpg"
                 alt="NextUI Album Cover"
@@ -140,10 +140,6 @@ export default function Home() {
         </TracingBeam>
       </div>
       <div className="bg-slate-950 min-h-screen md:flex items-center justify-center">
-        <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20 sm:mb-10"
-          fill="white"
-        />
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             My Project <br /> Overview.
@@ -562,7 +558,7 @@ export default function Home() {
                     dibuat menggunakan CodeIgniter + AdminLTE
                   </p>
                   <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                   <a href="https://github.com/arifhida1647/sneaklab_project.git">View Github</a>
+                    <a href="https://github.com/arifhida1647/sneaklab_project.git">View Github</a>
                   </button>
 
 
@@ -574,7 +570,6 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
-
     </>
   );
 }
