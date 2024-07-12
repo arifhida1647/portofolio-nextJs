@@ -12,7 +12,12 @@ import { twMerge } from "tailwind-merge";
 import { FlipWords } from "../app/components/ui/flip-words";
 import { Spotlight } from "../app/components/ui/Spotlight";
 import { Meteors } from "../app/components/ui/meteors";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import './styles.css';
 export default function Home() {
   const words = [
     {
@@ -133,6 +138,441 @@ export default function Home() {
             ))}
           </div>
         </TracingBeam>
+      </div>
+      <div className="bg-slate-950 min-h-screen md:flex items-center justify-center">
+        <Spotlight
+          className="-top-40 left-0 md:left-60 md:-top-20 sm:mb-10"
+          fill="white"
+        />
+        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            My Project <br /> Overview.
+          </h1>
+          <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+            Please Visit <span className="primary underline"><a href="https://github.com/arifhida1647">My Github</a> </span>See all My repository
+          </p>
+        </div>
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Aplikasi FULUS
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/FulusBanner.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-12  relative z-50">
+                    Dibuat menggunakan bahasa JAVA dan Express JS pada android studio dan database Firebase
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/Fulus-MobileApps.git">View Github</a>
+                  </button>
+
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Protoype Aplikasi DICASH
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/figma.png"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-14 relative z-50">
+                    Prototype Aplikasi Dompet Digital yang dibuat menggunakan figma
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://www.figma.com/proto/NFFwdR8WeAE9qeZQJgvk16/IMK?type=design&node-id=341-723&t=O2ZFz5Sj1oBeLfRd-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=422%3A5457&show-proto-sidebar=1&mode=design">View Figma</a>
+                  </button>
+
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Web Aplikasi UPN Sehat
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/UPNSehat.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-4 relative z-50">
+                    Aplikasi Reminder Obat dan berisi informasi mengenai kesehatan, aplikasi ini dibuat
+                    dengan Express JS + HTML + Tailwind UI dan database Firebase
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://project-service-two.vercel.app/">View Demo</a>
+                  </button>
+                  <button className="border px-4 py-1 mt-2 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/projectService.git">View Github</a>
+                  </button>
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Web Aplikasi UPN Sehat
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/porto-3.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-4 relative z-50">
+                    Aplikasi Reminder Obat dan berisi informasi mengenai kesehatan, aplikasi ini dibuat
+                    dengan Express JS + Next JS + Shadcn UI dan database Firebase
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://upn-sehat-next-js.vercel.app/">View Demo</a>
+                  </button>
+                  <button className="border px-4 py-1 mt-2 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/UPNSehat-NextJs.git">View Github</a>
+                  </button>
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Web Aplikasi Laundry
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/porto-4.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-4 relative z-50">
+                    Webiste ini untuk memesan layanan laundry secara online, dibuat menggunakan framework PHP
+                    Codeigniter dan database nya MySql
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/senaklab-frontend.git">View Github</a>
+                  </button>
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Web Aplikasi SIJAGO
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/porto-2.png"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-4 relative z-50">
+                    Aplikasi SIJAGO dibuat menggunakan PHP Native + Bootstrap, dan dibuat menggunakan database MySql
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/sijago-PHP.git">View Github</a>
+                  </button>
+
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Web Aplikasi Elemes.id
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/porto-5.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-4 relative z-50">
+                    Aplikasi Ini dibuat menggunakan Next Js + Tailwind UI sebagai aplikasi frontend saja
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://test-elemes.vercel.app">View Demo</a>
+                  </button>
+                  <button className="border px-4 py-1 rounded-lg mt-2 border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/test-elemes.git">View Github</a>
+                  </button>
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Aplikasi LMS
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/vueJs1.png"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-5 relative z-50">
+                    Aplikasi forntend ini dibuat menggunakan framework Vue JS  + Tailwind UI
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://vuejs-route.vercel.app#/">View Demo</a>
+                  </button>
+                  <button className="border px-4 py-1 rounded-lg mt-2 border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/VuejsRoute.git">View Github</a>
+                  </button>
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Web Aplikasi Dashboard Laundry
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-arifhidayat.vercel.app/images/porto-6.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-4 relative z-50">
+                    Dashborad dibuat untuk melakukan pengelohan data pada aplikasi pemesanan laundry yang telah saya buat sebelumnya,
+                    dibuat menggunakan CodeIgniter + AdminLTE
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                   <a href="https://github.com/arifhida1647/sneaklab_project.git">View Github</a>
+                  </button>
+
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
 
     </>
