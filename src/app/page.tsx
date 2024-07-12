@@ -99,48 +99,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-950 pb-12">
-        <LampContainer>
-          <motion.h1
-            initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.,
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            className="bg-gradient-to-br from-slate-300 bg-slate-950  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-          >
-            My<FlipWords words={["Education", "Experience", "Certificate"]} />
-          </motion.h1>
-        </LampContainer>
-        <TracingBeam className="px-12">
-          <div className="max-w-2xl mx-auto antialiased relative">
-            {dummyContent.map((item, index) => (
-              <div key={`content-${index}`} className="mb-10">
-                <h2 className="bg-slate-950 text-white rounded-full text-sm w-fit py-1 mb-4">
-                  {item.badge}
-                </h2>
-                <p className="text-xl mb-4">
-                  {item.title}
-                </p>
-                <div className="text-sm prose-invert">
-                  {item?.image && (
-                    <Image
-                      src={item.image}
-                      alt="blog thumbnail"
-                      height="1000"
-                      width="1000"
-                      className="rounded-lg mb-10 object-cover"
-                    />
-                  )}
-                  {item.description}
-                </div>
-              </div>
-            ))}
-          </div>
-        </TracingBeam>
-      </div>
       <div className="bg-slate-950 min-h-screen md:flex items-center justify-center">
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
@@ -573,6 +531,48 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
+      <div className="bg-slate-950 pb-12">
+        <LampContainer>
+          <motion.h1
+            initial={{ opacity: 0.5, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="bg-gradient-to-br from-slate-300 bg-slate-950  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          >
+            My<FlipWords words={["Education", "Experience", "Certificate"]} />
+          </motion.h1>
+        </LampContainer>
+        <TracingBeam className="px-12">
+          <div className="max-w-2xl mx-auto antialiased relative">
+            {dummyContent.map((item, index) => (
+              <div key={`content-${index}`} className="mb-10">
+                <h2 className="bg-slate-950 text-white rounded-full text-sm w-fit py-1 mb-4">
+                  {item.badge}
+                </h2>
+                <p className="text-xl mb-4">
+                  {item.title}
+                </p>
+                <div className="text-sm prose-invert">
+                  {item?.image && (
+                    <Image
+                      src={item.image}
+                      alt="blog thumbnail"
+                      height="1000"
+                      width="1000"
+                      className="rounded-lg mb-10 object-cover"
+                    />
+                  )}
+                  {item.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </TracingBeam>
+      </div>
       <div className="bg-slate-950 min-h-screen md:flex items-center justify-center">
         <Swiper
           effect={'coverflow'}
@@ -599,20 +599,20 @@ export default function Home() {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-              <Card className="bg-black text-white py-10 border-2 border-red-500">
-                <CardBody>
-                  <p className="text-2xl">Contact Number</p>
-                  <p className="text-base my-5">085695091825</p>
-                </CardBody>
-              </Card>
+            <Card className="bg-black text-white py-10 border-2 border-red-500">
+              <CardBody>
+                <p className="text-2xl">Contact Number</p>
+                <p className="text-base my-5">085695091825</p>
+              </CardBody>
+            </Card>
           </SwiperSlide >
           <SwiperSlide>
-              <Card className="bg-black text-white py-10 border-2 border-red-500">
-                <CardBody>
-                  <p className="text-2xl">Email Address</p>
-                  <p className="text-base my-5">arifhida1647@gmail.com</p>
-                </CardBody>
-              </Card>
+            <Card className="bg-black text-white py-10 border-2 border-red-500">
+              <CardBody>
+                <p className="text-2xl">Email Address</p>
+                <p className="text-base my-5">arifhida1647@gmail.com</p>
+              </CardBody>
+            </Card>
           </SwiperSlide>
 
         </Swiper >
