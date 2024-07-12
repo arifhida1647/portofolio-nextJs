@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@nextui-org/button";
-import { AuroraBackground } from "../app/components/ui/aurora-background";
 import { Vortex } from "../app/components/ui/vortex";
 import { TypewriterEffectSmooth } from "../app/components/ui/typewriter-effect";
 import { Image } from "@nextui-org/react";
@@ -10,14 +9,17 @@ import { LampContainer } from "../app/components/ui/lamp";
 import { TracingBeam } from "../app/components/ui/tracing-beam";
 import { twMerge } from "tailwind-merge";
 import { FlipWords } from "../app/components/ui/flip-words";
-import { Spotlight } from "../app/components/ui/Spotlight";
 import { Meteors } from "../app/components/ui/meteors";
+import { HoverEffect } from "../app/components/ui/card-hover-effect";
+import { LinkPreview } from "../app/components/ui/link-preview";
+import { Card, CardBody } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import './styles.css';
+
 export default function Home() {
   const words = [
     {
@@ -45,9 +47,9 @@ export default function Home() {
           </h2>
           <TypewriterEffectSmooth words={words} />
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-            <Button color="primary">LinkedIn</Button>
+            <Button color="primary"><LinkPreview url="https://www.linkedin.com/in/arif-hidayat-332825184/">LinkedIn</LinkPreview></Button>
             <Button className="border border-primary bg-black text-white text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,255,1)] transition duration-200">
-              Github
+              <LinkPreview url="https://github.com/arifhida1647">Github</LinkPreview>
             </Button>
           </div>
         </Vortex>
@@ -58,11 +60,11 @@ export default function Home() {
             <div className="w-full md:w-1/2 flex justify-center">
               <Image
                 isBlurred
-                width={300}
+                width="100%" // Use width 100% for responsive behavior
                 height={600}
                 src="https://portofolio-arifhidayat.vercel.app/images/profile.jpg"
                 alt="NextUI Album Cover"
-                className="m-5"
+                className="m-5 sm:w-[300px] md:w-[500px]"
               />
             </div>
             <div className="w-full md:w-1/2 text-white">
@@ -91,7 +93,7 @@ export default function Home() {
                 Phone:&emsp;&emsp;&emsp;&emsp;&emsp;+62-8569-5091-825
               </div>
               <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
-                Download CV
+                <LinkPreview url="https://drive.google.com/file/d/12Mq9-G6X5iLnfMGcR7I5CmdurysN9gPn/view?usp=sharing">Download CV</LinkPreview>
               </Button>
             </div>
           </div>
@@ -145,7 +147,8 @@ export default function Home() {
             My Project <br /> Overview.
           </h1>
           <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-            Please Visit <span className="primary underline"><a href="https://github.com/arifhida1647">My Github</a> </span>See all My repository
+            Please Visit <span className="primary underline"> <LinkPreview url="https://github.com/arifhida1647" className="font-bold">
+              My Github</LinkPreview></span> See all My repository
           </p>
         </div>
         <Swiper
@@ -570,6 +573,55 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
+      <div className="bg-slate-950 min-h-screen md:flex items-center justify-center">
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={'auto'}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper h-[300px]"
+        >
+          <SwiperSlide>
+            <Card className="bg-black text-white py-10 border-2 border-red-500">
+              <CardBody>
+                <p className="text-2xl">Address</p>
+                <p className="text-base my-5">Tangerang Selatan, 15412</p>
+              </CardBody>
+            </Card>
+          </SwiperSlide>
+          <SwiperSlide>
+              <Card className="bg-black text-white py-10 border-2 border-red-500">
+                <CardBody>
+                  <p className="text-2xl">Contact Number</p>
+                  <p className="text-base my-5">085695091825</p>
+                </CardBody>
+              </Card>
+          </SwiperSlide >
+          <SwiperSlide>
+              <Card className="bg-black text-white py-10 border-2 border-red-500">
+                <CardBody>
+                  <p className="text-2xl">Email Address</p>
+                  <p className="text-base my-5">arifhida1647@gmail.com</p>
+                </CardBody>
+              </Card>
+          </SwiperSlide>
+
+        </Swiper >
+        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            My Contact.
+          </h1>
+        </div>
+      </div >
     </>
   );
 }
@@ -763,5 +815,38 @@ const dummyContent = [
     badge: "November 2022",
     image:
       "https://portofolio-arifhidayat.vercel.app/images/oracle.png",
+  },
+];
+
+const projects = [
+  {
+    title: "Address",
+    description:
+      "Tangerang Selatan, 15412",
+    link: "/",
+  },
+  {
+    title: "Contact Number",
+    description:
+      "085695091825",
+    link: "/",
+  },
+  {
+    title: "Email Address",
+    description:
+      "arifhida1647@gmail.com",
+    link: "/",
+  },
+  {
+    title: "LinkedIn",
+    description:
+      "Arif Hidayat",
+    link: "https://www.linkedin.com/in/arif-hidayat-332825184/",
+  },
+  {
+    title: "Github",
+    description:
+      "Arif Hidayat",
+    link: "https://github.com/arifhida1647",
   },
 ];
