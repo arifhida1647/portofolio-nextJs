@@ -62,7 +62,7 @@ export default function Home() {
                 isBlurred
                 width="100%" // Use width 100% for responsive behavior
                 height={600}
-                src="https://portofolio-arifhidayat.vercel.app/images/profile.jpg"
+                src="https://portofolio-temp.vercel.app/images/profile.jpg"
                 alt="NextUI Album Cover"
                 className="m-5 sm:w-[300px] md:w-[500px]"
               />
@@ -195,7 +195,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/FulusBanner.jpg"
+                    src="https://portofolio-temp.vercel.app/images/FulusBanner.jpg"
                   />
                   <p className="font-normal text-base text-slate-500 my-12  relative z-50">
                     Dibuat menggunakan bahasa JAVA dan Express JS pada android studio dan database Firebase
@@ -239,7 +239,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/figma.png"
+                    src="https://portofolio-temp.vercel.app/images/figma.png"
                   />
                   <p className="font-normal text-base text-slate-500 my-14 relative z-50">
                     Prototype Aplikasi Dompet Digital yang dibuat menggunakan figma
@@ -283,7 +283,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/UPNSehat.jpg"
+                    src="https://portofolio-temp.vercel.app/images/UPNSehat.jpg"
                   />
                   <p className="font-normal text-base text-slate-500 my-4 relative z-50">
                     Aplikasi Reminder Obat dan berisi informasi mengenai kesehatan, aplikasi ini dibuat
@@ -329,7 +329,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/porto-3.jpg"
+                    src="https://portofolio-temp.vercel.app/images/porto-3.jpg"
                   />
                   <p className="font-normal text-base text-slate-500 my-4 relative z-50">
                     Aplikasi Reminder Obat dan berisi informasi mengenai kesehatan, aplikasi ini dibuat
@@ -375,7 +375,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/porto-4.jpg"
+                    src="https://portofolio-temp.vercel.app/images/porto-4.jpg"
                   />
                   <p className="font-normal text-base text-slate-500 my-4 relative z-50">
                     Webiste ini untuk memesan layanan laundry secara online, dibuat menggunakan framework PHP
@@ -418,7 +418,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/porto-2.png"
+                    src="https://portofolio-temp.vercel.app/images/porto-2.png"
                   />
                   <p className="font-normal text-base text-slate-500 my-4 relative z-50">
                     Aplikasi SIJAGO dibuat menggunakan PHP Native + Bootstrap, dan dibuat menggunakan database MySql
@@ -462,7 +462,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/porto-5.jpg"
+                    src="https://portofolio-temp.vercel.app/images/porto-5.jpg"
                   />
                   <p className="font-normal text-base text-slate-500 my-4 relative z-50">
                     Aplikasi Ini dibuat menggunakan Next Js + Tailwind UI sebagai aplikasi frontend saja
@@ -508,7 +508,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/vueJs1.png"
+                    src="https://portofolio-temp.vercel.app/images/vueJs1.png"
                   />
                   <p className="font-normal text-base text-slate-500 my-5 relative z-50">
                     Aplikasi forntend ini dibuat menggunakan framework Vue JS  + Tailwind UI
@@ -554,7 +554,7 @@ export default function Home() {
                   <Image
                     width={300}
                     alt="NextUI hero Image"
-                    src="https://portofolio-arifhidayat.vercel.app/images/porto-6.jpg"
+                    src="https://portofolio-temp.vercel.app/images/porto-6.jpg"
                   />
                   <p className="font-normal text-base text-slate-500 my-4 relative z-50">
                     Dashborad dibuat untuk melakukan pengelohan data pada aplikasi pemesanan laundry yang telah saya buat sebelumnya,
@@ -690,7 +690,7 @@ const dummyContent = [
     ),
     badge: "November 2023 - Present",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/kalbe_1.jpg",
+      "https://portofolio-temp.vercel.app/images/kalbe_1.jpg",
   },
   {
     title: "PT GTech Digital Asia",
@@ -716,7 +716,7 @@ const dummyContent = [
     ),
     badge: "Oktober 2023 - Desember 2023",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/map.jpg",
+      "https://portofolio-temp.vercel.app/images/map.jpg",
   },
   {
     title: "Maxy Academy",
@@ -736,7 +736,7 @@ const dummyContent = [
     ),
     badge: "September 2023 - Oktober 2023",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/sertif%20maxy.png",
+      "https://portofolio-temp.vercel.app/images/sertif%20maxy.png",
   },
   {
     title: "CERTIFICATE",
@@ -762,7 +762,7 @@ const dummyContent = [
     ),
     badge: "Oktober 2021",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/sertif%20progate%20html.png",
+      "https://portofolio-temp.vercel.app/images/sertif%20progate%20html.png",
   },
   {
     title: "Kursus Javascript - Progate",
@@ -775,7 +775,7 @@ const dummyContent = [
     ),
     badge: "Oktober 2021",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/progate%20js.png",
+      "https://portofolio-temp.vercel.app/images/progate%20js.png",
   },
   {
     title: "Kursus SQL - Progate",
@@ -788,7 +788,7 @@ const dummyContent = [
     ),
     badge: "Oktober 2021",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/progate%20SAQL.png",
+      "https://portofolio-temp.vercel.app/images/progate%20SAQL.png",
   },
   {
     title: "Data Science Class - Rakamin Academy",
@@ -801,7 +801,7 @@ const dummyContent = [
     ),
     badge: "Oktober 2021",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/rakamin.png",
+      "https://portofolio-temp.vercel.app/images/rakamin.png",
   },
   {
     title: "Java Foundations Oracle Academy",
@@ -814,7 +814,7 @@ const dummyContent = [
     ),
     badge: "November 2022",
     image:
-      "https://portofolio-arifhidayat.vercel.app/images/oracle.png",
+      "https://portofolio-temp.vercel.app/images/oracle.png",
   },
 ];
 
