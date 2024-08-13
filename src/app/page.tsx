@@ -87,13 +87,13 @@ export default function Home() {
                 Zip code:&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;15412
               </div>
               <div className="text-base mb-2">
-                Email:&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Arifhida1647@gmail.com
+                Email:&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;arifhidayat@arifhida.my.id
               </div>
               <div className="text-base mb-8">
                 Phone:&emsp;&emsp;&emsp;&emsp;&emsp;+62-8569-5091-825
               </div>
               <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
-                <LinkPreview url="https://drive.google.com/file/d/12Mq9-G6X5iLnfMGcR7I5CmdurysN9gPn/view?usp=sharing">Download CV</LinkPreview>
+                <LinkPreview url="https://docs.google.com/document/d/1yGqyj63KuKWhMQrEivfvMMPuzYxFg0kIe3V-6oNRwXM/edit?usp=sharing">Download CV</LinkPreview>
               </Button>
             </div>
           </div>
