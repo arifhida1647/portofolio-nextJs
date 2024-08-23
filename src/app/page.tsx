@@ -482,6 +482,9 @@ export default function Home() {
                     Aplikasi SIJAGO dibuat menggunakan PHP Native + Bootstrap, dan dibuat menggunakan database MySql
                   </p>
                   <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://sijago.arifhida.my.id/">View Demo</a>
+                  </button>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
                     <a href="https://github.com/arifhida1647/sijago-PHP.git">View Github</a>
                   </button>
 
