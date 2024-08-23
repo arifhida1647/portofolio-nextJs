@@ -148,94 +148,6 @@ export default function Home() {
                   </div>
 
                   <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                    Aplikasi FULUS
-                  </h1>
-                  <Image
-                    width={300}
-                    alt="NextUI hero Image"
-                    src="https://portofolio-temp.vercel.app/images/FulusBanner.jpg"
-                  />
-                  <p className="font-normal text-base text-slate-500 my-12  relative z-50">
-                    Dibuat menggunakan bahasa JAVA dan Express JS pada android studio dan database Firebase
-                  </p>
-                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                    <a href="https://github.com/arifhida1647/Fulus-MobileApps.git">View Github</a>
-                  </button>
-
-
-                  {/* Meaty part - Meteor effect */}
-                  <Meteors number={20} />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <div className=" w-full relative max-w-xl">
-                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="h-2 w-2 text-gray-300"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
-                      />
-                    </svg>
-                  </div>
-
-                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                    Protoype Aplikasi DICASH
-                  </h1>
-                  <Image
-                    width={300}
-                    alt="NextUI hero Image"
-                    src="https://portofolio-temp.vercel.app/images/figma.png"
-                  />
-                  <p className="font-normal text-base text-slate-500 my-14 relative z-50">
-                    Prototype Aplikasi Dompet Digital yang dibuat menggunakan figma
-                  </p>
-                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                    <a href="https://www.figma.com/proto/NFFwdR8WeAE9qeZQJgvk16/IMK?type=design&node-id=341-723&t=O2ZFz5Sj1oBeLfRd-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=422%3A5457&show-proto-sidebar=1&mode=design">View Figma</a>
-                  </button>
-
-
-                  {/* Meaty part - Meteor effect */}
-                  <Meteors number={20} />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <div className=" w-full relative max-w-xl">
-                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="h-2 w-2 text-gray-300"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
-                      />
-                    </svg>
-                  </div>
-
-                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
                     Web Aplikasi UPN Sehat
                   </h1>
                   <Image
@@ -385,7 +297,7 @@ export default function Home() {
                     Dashborad dibuat untuk melakukan pengelohan data pada aplikasi pemesanan laundry yang telah saya buat sebelumnya,
                     dibuat menggunakan CodeIgniter + AdminLTE
                   </p>
-                  
+
                   <button className="border px-4 py-1 mb-2 rounded-lg  border-gray-500 text-gray-300">
                     <a href="https://dashboard.sneakslab-admin.my.id/">View Demo</a>
                   </button>
@@ -518,6 +430,94 @@ export default function Home() {
                   </div>
 
                   <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Aplikasi FULUS
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-temp.vercel.app/images/FulusBanner.jpg"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-12  relative z-50">
+                    Dibuat menggunakan bahasa JAVA dan Express JS pada android studio dan database Firebase
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://github.com/arifhida1647/Fulus-MobileApps.git">View Github</a>
+                  </button>
+
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+                    Protoype Aplikasi DICASH
+                  </h1>
+                  <Image
+                    width={300}
+                    alt="NextUI hero Image"
+                    src="https://portofolio-temp.vercel.app/images/figma.png"
+                  />
+                  <p className="font-normal text-base text-slate-500 my-14 relative z-50">
+                    Prototype Aplikasi Dompet Digital yang dibuat menggunakan figma
+                  </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://www.figma.com/proto/NFFwdR8WeAE9qeZQJgvk16/IMK?type=design&node-id=341-723&t=O2ZFz5Sj1oBeLfRd-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=422%3A5457&show-proto-sidebar=1&mode=design">View Figma</a>
+                  </button>
+
+
+                  {/* Meaty part - Meteor effect */}
+                  <Meteors number={20} />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              <div className=" w-full relative max-w-xl">
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+                <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+                  <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-2 w-2 text-gray-300"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                      />
+                    </svg>
+                  </div>
+
+                  <h1 className="font-bold text-xl text-white mb-4 relative z-50">
                     Web Aplikasi Elemes.id
                   </h1>
                   <Image
@@ -564,7 +564,7 @@ export default function Home() {
                   </div>
 
                   <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                    Aplikasi LMS
+                    Web Frontend LMS
                   </h1>
                   <Image
                     width={300}
