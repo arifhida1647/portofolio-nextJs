@@ -27,11 +27,11 @@ export default function Home() {
       className: "text-blue text-sm md:text-4xl max-w-xl mt-6 text-center",
     },
     {
-      text: "Web",
+      text: "IT",
       className: "text-white text-sm md:text-4xl max-w-xl mt-6 text-center",
     },
     {
-      text: "Developer.",
+      text: "Enthusiast.",
       className: "text-primary text-sm md:text-4xl max-w-xl mt-6 text-center",
     },
   ];
