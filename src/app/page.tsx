@@ -247,6 +247,9 @@ export default function Home() {
                     Aplikasi Reminder Obat dan berisi informasi mengenai kesehatan, aplikasi ini dibuat
                     dengan Express JS + HTML + Tailwind UI dan database Firebase
                   </p>
+                  <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                    <a href="https://upn-sehat.vercel.app/">View Demo</a>
+                  </button>
                   <button className="border px-4 py-1 mt-2 rounded-lg  border-gray-500 text-gray-300">
                     <a href="https://github.com/arifhida1647/projectService.git">View Github</a>
                   </button>
