@@ -631,55 +631,6 @@ export default function Home() {
           </div>
         </TracingBeam>
       </div>
-      <div className="bg-slate-950 min-h-screen md:flex items-center justify-center">
-        <Swiper
-          effect={'coverflow'}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination]}
-          className="mySwiper h-[300px]"
-        >
-          <SwiperSlide>
-            <Card className="bg-black text-white py-10 border-2 border-red-500">
-              <CardBody>
-                <p className="text-2xl">Address</p>
-                <p className="text-base my-5">Tangerang Selatan, 15412</p>
-              </CardBody>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card className="bg-black text-white py-10 border-2 border-red-500">
-              <CardBody>
-                <p className="text-2xl">Contact Number</p>
-                <p className="text-base my-5">085695091825</p>
-              </CardBody>
-            </Card>
-          </SwiperSlide >
-          <SwiperSlide>
-            <Card className="bg-black text-white py-10 border-2 border-red-500">
-              <CardBody>
-                <p className="text-2xl">Email Address</p>
-                <p className="text-base my-5">arifhida1647@gmail.com</p>
-              </CardBody>
-            </Card>
-          </SwiperSlide>
-
-        </Swiper >
-        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            My Contact.
-          </h1>
-        </div>
-      </div >
     </>
   );
 }
